@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where The Moss Grows Back – Minessa Jumppanen</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+
+  <nav class="nav">
+  <div class="nav__inner">
+
+    <!-- logo -->
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-fallback">
+        minessa<span>.</span>
+      </span>
+    </a>
+
+    <!-- links -->
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Profile</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="project-detail.html">MOSS</a></li>
+    </ul>
+
+    <!-- burger (needed for JS) -->
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- mobile nav (also needed for JS) -->
+<nav class="nav__mobile" id="mobileNav">
+  <a href="index.html" class="active">Profile</a>
+  <a href="projects.html">Projects</a>
+  <a href="project-detail.html">MOSS</a>
+</nav>
+  <main class="page">
+    <div class="container">
+
+  <a href="projects.html" class="back">← Back to Projects</a>
+
+  <!-- banner -->
+  <div class="banner">🌿</div>
+
+  <!-- tags -->
+  <div class="tags">
+    <span class="tag tag-accent">Tag</span>
+    <span class="tag tag-accent">Tag</span>
+    <span class="tag">Tag</span>
+    <span class="tag">Tag</span>
+    <span class="tag">Tag</span>
+  </div>
+
+  <!-- title -->
+  <h1 style="font-family:var(--font-head);font-size:clamp(1.9rem,4vw,3rem);font-weight:700;color:#fff;margin:1rem 0 0.5rem;line-height:1.1;">
+    Where The Moss Grows <span style="color:var(--accent);">Back</span>
+  </h1>
+
+  <!-- meta -->
+  <div class="meta">
+    <div class="meta__item"><div class="meta__key">Engine</div><div class="meta__val">Lorem</div></div>
+    <div class="meta__item"><div class="meta__key">Genre</div><div class="meta__val">Lorem</div></div>
+    <div class="meta__item"><div class="meta__key">Duration</div><div class="meta__val">Lorem</div></div>
+    <div class="meta__item"><div class="meta__key">Role</div><div class="meta__val">Lorem</div></div>
+    <div class="meta__item"><div class="meta__key">Year</div><div class="meta__val">Lorem</div></div>
+  </div>
+
+  <hr />
+
+  <div class="body-grid">
+
+    <!-- main content -->
+    <article class="article">
+
+      <h2>Overview</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <h2>Gameplay Footage</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="video-wrap">
+        <iframe
+          src=""
+          title="Gameplay footage"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h2>Core Systems</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Sed do eiusmod tempor</li>
+        <li>Ut enim ad minim veniam</li>
+      </ul>
+
+      <h2>Design Decisions</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+      <h2>What I Learned</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Sed do eiusmod tempor</li>
+        <li>Ut enim ad minim veniam</li>
+      </ul>
+
+    </article>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+
+      <div class="sidebar-box">
+        <h3>Tech Stack</h3>
+        <div class="sidebar-row"><span>Lorem</span><span class="tag tag-accent">Type</span></div>
+        <div class="sidebar-row"><span>Lorem</span><span class="tag tag-accent">Type</span></div>
+        <div class="sidebar-row"><span>Lorem</span><span class="tag">Type</span></div>
+        <div class="sidebar-row"><span>Lorem</span><span class="tag">Type</span></div>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Project Stats</h3>
+        <div class="sidebar-stat"><div class="sidebar-stat__label">Stat</div><div class="sidebar-stat__val">Lorem</div></div>
+        <div class="sidebar-stat"><div class="sidebar-stat__label">Stat</div><div class="sidebar-stat__val">Lorem</div></div>
+        <div class="sidebar-stat"><div class="sidebar-stat__label">Stat</div><div class="sidebar-stat__val">Lorem</div></div>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Links</h3>
+        <div class="btn-block">
+          <a href="#" class="btn btn-primary">Play</a>
+          <a href="#" class="btn btn-outline">Source</a>
+        </div>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Other Projects</h3>
+        <a href="projects.html" class="sidebar-link">Project</a>
+        <a href="projects.html" class="sidebar-link">Project</a>
+        <a href="projects.html" class="sidebar-link">Project</a>
+      </div>
+
+    </aside>
+  </div>
+
+</div>
+```
+
+  </main>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Minessa Jumppanen</p>
+    </div>
+  </footer>
+
+  <!-- burger script -->
+
+  <script>
+    const burger = document.getElementById('burger');
+    const mobileNav = document.getElementById('mobileNav');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
+
