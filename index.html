@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - NessaJmp</title>
+  <link rel="icon" type="image/png" href="images/moon_favicon.png">
+
+  <!-- main css -->
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+
+  <nav class="nav">
+    <div class="nav__inner">
+  <!-- logo, if image dies we fallback to text -->
+  <a href="index.html" class="nav__logo">
+    <span class="nav__logo-fallback" style="display:none;">
+      minessa<span>.</span>
+    </span>
+  </a>
+
+  <!-- nav links -->
+  <ul class="nav__links">
+    <li><a href="index.html" class="active">Profile</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="project-detail.html">MOSS</a></li>
+  </ul>
+
+  <!-- burger button (mobile magic) -->
+  <button class="nav__burger" id="burger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+
+  </nav>
+
+  <!-- mobile nav (js toggles this open/closed) -->
+
+  <nav class="nav__mobile" id="mobileNav">
+    <a href="index.html" class="active">Profile</a>
+    <a href="projects.html">Projects</a>
+    <a href="project-detail.html">Project</a>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+
+  <!-- hero section (top area, first thing people see) -->
+  <section class="hero">
+    <div class="hero__inner">
+
+      <!-- big logo on the side -->
+      <img src="https://i.postimg.cc/NjV2QQfK/Logo.png" alt="Minessa Jumppanen logo" class="hero__logo" />
+
+      <!-- intro text -->
+      <div>
+        <p class="hero__label">Portfolio</p>
+
+        <!-- em makes this purple -->
+        <h1 class="hero__title">
+          Game Programming Student<br />&amp; <em>Artist</em>
+        </h1>
+
+        <p class="hero__sub">
+         Studying game programming at XAMK University of Applied Sciences. Passionate about
+concept art, visual world-building, animation, and building things that feel alive.
+        </p>
+
+        <!-- buttons -->
+        <div class="hero__cta">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- profile section (2 columns, unless css decides otherwise) -->
+  <section style="padding: 2rem 0 3rem;">
+    <div class="profile-grid">
+
+      <!-- placeholder, will replace with actual photo someday -->
+      <div>
+        <div>
+  <img src="https://i.postimg.cc/YS1HRd0N/Scene1.gif" alt="Minessa" class="profile-photo">
+</div>
+      </div>
+
+      <!-- all the actual info -->
+      <div>
+        <p class="profile-role">Game Developer &amp; Visual Artist</p>
+        <h2 class="profile-name">Minessa Jumppanen</h2>
+
+        <p class="profile-bio">
+          I’m a game programming student with a background in audiovisual communication and visual art. I enjoy working across different areas of game development—from programming and UI design to concept art and 3D work. I’m a bit of a generalist, but I’m especially drawn to the artistic side. Most of my art skills are self-taught, and I’m always looking to grow.
+        </p>
+
+        <!-- tags (one day I'll feel confident showing keeping these here) -->
+        <div class="tags">
+          <span class="tag tag-accent">Unity</span>
+          <span class="tag tag-accent">C#</span>
+          <span class="tag tag-accent">Animation</span>
+          <span class="tag tag-accent">Blender</span>
+          <span class="tag tag-accent">HTML / CSS</span>
+          <span class="tag">Unreal Engine 5</span>
+          <span class="tag">C++</span>
+          <span class="tag">UI Design</span>
+          <span class="tag">Concept Art</span>
+          <span class="tag">Photoshop</span>
+          <span class="tag">Git</span>
+        </div>
+
+        <!-- skill bars (percentages are vibes-based honestly) -->
+        <div style="margin-top: 2rem;">
+          <p class="s-label">Skills</p>
+          <h3 class="s-title" style="font-size:1.2rem;">Technical &amp; Creative</h3>
+
+          <div class="skills-grid">
+
+            <div class="skill-item">
+              <div class="skill-name">Unity / C#</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">Animation &amp; Scripting</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">Concept Art &amp; Visual Design</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">Blender</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">Photoshop</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">UI Design</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">HTML / CSS</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">Unreal Engine 5</div>
+              <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- education, pathetic excuse of it -->
+        <p class="s-label">Education</p>
+            <h3 class="s-title" style="font-size:1.2rem;">Academic Background</h3>
+            <div class="timeline">
+
+              <div class="tl-item">
+                <div class="tl-year">2024 – Present</div>
+                <div>
+                  <div class="tl-title">Bachelor of Engineering – Game Programming</div>
+                  <div class="tl-sub">XAMK University of Applied Sciences, Finland</div>
+                  <div class="tl-desc">Focusing on game programming, engine systems, and interactive design. Bringing an artistic background into technical studies — combining code with visual craft.</div>
+                </div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-year">2010 – 2014</div>
+                <div>
+                  <div class="tl-title">Audiovisual Communication</div>
+                  <div class="tl-sub">Riveria College, Finland</div>
+                  <div class="tl-desc">Studied visual storytelling, media production, and design fundamentals. Built the foundation for a career working at the intersection of art and technology.</div>
+                </div>
+              </div>
+
+              <!-- self-taught is worth including — shows initiative -->
+              <div class="tl-item">
+                <div class="tl-year">Self-taught</div>
+                <div>
+                  <div class="tl-title">Independent Practice – Art, Animation &amp; Game Dev</div>
+                  <div class="tl-sub">Ongoing</div>
+                  <div class="tl-desc">Self-taught across concept art, Blender hand-painting, UI design, animation scripting, and Photoshop. Driven by personal projects, game jams, and a genuine love for the craft.</div>
+                </div>
+              </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- contact form (does NOT actually send anything yet) -->
+  <div class="form-box" id="contact">
+    <h3 class="form-title">Get in Touch</h3>
+    <p class="form-sub">Message me about anything!</p>
+
+    <form>
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label class="form-label" for="f-name">Your Name</label>
+          <input class="form-input" type="text" id="f-name" placeholder="Nimi Nimetön" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-email">Email Address</label>
+          <input class="form-input" type="email" id="f-email" placeholder="esimerkki@example.com" />
+        </div>
+
+        <!-- dropdown -->
+        <div class="form-group">
+          <label class="form-label" for="f-subject">Subject</label>
+          <select class="form-select" id="f-subject">
+            <option value="">Select a topic…</option>
+            <option>Option1</option>
+            <option>Option2</option>
+            <option>Option3</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-url">Link</label>
+          <input class="form-input" type="url" id="f-url" placeholder="https://..." />
+        </div>
+
+        <!-- big message box -->
+        <div class="form-group form-full">
+          <label class="form-label" for="f-msg">Message</label>
+          <textarea class="form-textarea" id="f-msg" placeholder="write something here..."></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Send →</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+```
+
+  </main>
+
+  <!-- footer (simple for now) -->
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Minessa Jumppanen</p>
+    </div>
+  </footer>
+
+  <!-- js for burger menu -->
+
+  <script>
+    const burger = document.getElementById('burger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+  </script>
+<script src="js/effects.js"></script>
+</body>
+</html>
+
