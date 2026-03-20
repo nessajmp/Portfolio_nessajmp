@@ -252,6 +252,31 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .sidebar { position: sticky; top: calc(var(--nav-h) + 2rem); display: flex; flex-direction: column; gap: 1.2rem; }
 .sidebar-box { background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.4rem; }
 .sidebar-box h3 { font-family: var(--font-head); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem; }
+/* ── PROGRESS BARS (sidebar) ── */
+.progress-item {
+  margin-bottom: 0.8rem;
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  font-family: var(--font-head);
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4a2a6e, #d4a8f0, var(--accent));
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
 .sidebar-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.87rem; margin-bottom: 0.7rem; }
 .sidebar-row:last-child { margin-bottom: 0; }
 .sidebar-stat { display: flex; flex-direction: column; gap: 2px; margin-bottom: 0.8rem; }
