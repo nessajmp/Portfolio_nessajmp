@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="icon" type="image/png" href="images/moon_favicon.png">
+
+  <!-- main css -->
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+
+  <nav class="nav">
+    <div class="nav__inner">
+  <!-- logo, if image dies we fallback to text -->
+  <a href="index.html" class="nav__logo">
+    <span class="nav__logo-fallback" style="display:none;">
+      minessa<span>.</span>
+    </span>
+  </a>
+
+  <!-- nav links -->
+  <ul class="nav__links">
+    <li><a href="index.html" class="active">Profile</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="project-detail.html">MOSS</a></li>
+  </ul>
+
+  </nav>
+
+  <main class="page">
+    <div class="container">
+    
+    <!-- mobile nav (also needed for JS) -->
+<nav class="nav__mobile" id="mobileNav">
+  <a href="index.html" class="active">Profile</a>
+  <a href="projects.html">Projects</a>
+  <a href="project-detail.html">MOSS</a>
+</nav>
+
+  <!-- top section -->
+  <section class="hero">
+    <p class="hero__label">My Work</p>
+    <h1 class="hero__title">Project <em>Overview</em></h1>
+    <p class="hero__sub">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- featured -->
+  <section>
+    <p class="s-label">Featured</p>
+
+    <div class="featured">
+      <div class="featured__thumb">🌿</div>
+
+      <div class="featured__body">
+        <div class="tags">
+          <span class="tag tag-accent">Tag</span>
+          <span class="tag tag-accent">Tag</span>
+          <span class="tag">Tag</span>
+          <span class="tag">Tag</span>
+        </div>
+
+        <h2 class="featured__title">Where The Moss Grows Back</h2>
+
+        <p class="featured__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <a href="project-detail.html" class="btn btn-primary">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- grid -->
+  <section>
+    <p class="s-label">All Projects</p>
+    <h2 class="s-title">Games &amp; Prototypes</h2>
+    <p class="s-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <div class="card__thumb">🌲</div>
+        <div class="card__body">
+          <div class="card__tags">
+            <span class="tag tag-accent">Tag</span>
+            <span class="tag">Tag</span>
+          </div>
+          <h3 class="card__title">Project Title</h3>
+          <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <span class="card__link">Info →</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__thumb">⚔️</div>
+        <div class="card__body">
+          <div class="card__tags">
+            <span class="tag tag-accent">Tag</span>
+            <span class="tag">Tag</span>
+          </div>
+          <h3 class="card__title">Project Title</h3>
+          <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <span class="card__link">Info →</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__thumb">🎲</div>
+        <div class="card__body">
+          <div class="card__tags">
+            <span class="tag tag-accent">Tag</span>
+            <span class="tag">Tag</span>
+          </div>
+          <h3 class="card__title">Project Title</h3>
+          <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <span class="card__link">Info →</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__thumb">🔦</div>
+        <div class="card__body">
+          <div class="card__tags">
+            <span class="tag tag-accent">Tag</span>
+            <span class="tag">Tag</span>
+          </div>
+          <h3 class="card__title">Project Title</h3>
+          <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <span class="card__link">Info →</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__thumb">🌙</div>
+        <div class="card__body">
+          <div class="card__tags">
+            <span class="tag tag-accent">Tag</span>
+            <span class="tag">Tag</span>
+          </div>
+          <h3 class="card__title">Project Title</h3>
+          <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <span class="card__link">Info →</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__thumb">🎨</div>
+        <div class="card__body">
+          <div class="card__tags">
+            <span class="tag tag-accent">Tag</span>
+            <span class="tag">Tag</span>
+          </div>
+          <h3 class="card__title">Project Title</h3>
+          <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <span class="card__link">Info →</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- stats -->
+  <div class="stats">
+    <div class="stat"><div class="stat__num">0</div><div class="stat__label">Projects</div></div>
+    <div class="stat"><div class="stat__num">0</div><div class="stat__label">Game Jams</div></div>
+    <div class="stat"><div class="stat__num">0</div><div class="stat__label">Engines</div></div>
+    <div class="stat"><div class="stat__num">0</div><div class="stat__label">Years</div></div>
+  </div>
+
+</div>
+
+  </main>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Minessa Jumppanen</p>
+    </div>
+  </footer>
+
+  <!-- burger script -->
+
+  <script>
+    const burger = document.getElementById('burger');
+    const mobileNav = document.getElementById('mobileNav');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
+
